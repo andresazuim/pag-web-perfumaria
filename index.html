@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Perfumaria</title>
+</head>
+
+<body>
+
+    <head>
+        <div class="banner-semana-consumidor">
+            <img src="img/banner-semana-consumidor.svg" alt="Semana do consumidor" class="banner-semana-consumidor-img">
+
+        </div>
+        <div class="container-head">
+            <div class="container-header-logo">
+                <button class="menu-hamburguer">
+                    <img src="img/Menu.svg" alt="aba menu-hamburguer" class="container-imagem">
+                </button>
+                <div class="container-logo">
+                    <img src="img/logo-completa.svg" alt="logo Perfumaria">
+                </div>
+                <div class="container-head-atalhos">
+                </div>
+                <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos"
+                        class="container-imagem container__imagem-transparente">
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/Compras.svg" alt="Carrinho de Compras" class="container-imagem">
+                    <!-- <p class="container__texto">Minha sacola</p> -->
+
+                </a>
+            </div>
+            <div class="container-head-barra-de-pesquisa">
+                <input type="search" class="input-busca" placeholder="O que você procura hoje?"></input>
+                <button class="botao-busca">
+                    <img src="img/busca.svg" alt="lupa para busca">
+                </button>
+            </div>
+
+        </div>
+        </div>
+    </head>
+    <section class="carrossel">
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide"><img src="img/planfetos/banner-1.jpg" alt="Lançamento casa214"></div>
+
+                    <div class="swiper-slide"><img src="img/planfetos/banner-2.webp"
+                            alt="Make b"></div>
+                    <div class="swiper-slide"><img
+                            src="img/planfetos/banner-3.jpg"
+                            alt="Nativa spa"></div>
+                    <div class="swiper-slide"><img src="img/planfetos/banner.jpg" alt="Desconto boticario"></div>
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+</script>
+
+</html>
