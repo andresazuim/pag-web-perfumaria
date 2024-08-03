@@ -1,0 +1,84 @@
+.hidden {
+    display: none;
+}
+
+.loginContainer {
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer-text{
+    display: flex;
+    padding: 20px;
+    border: 3px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #0000006a;
+}
+.form-casdastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    gap: 1em;
+    margin: 1em;
+}
+
+.container__texto {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#email {
+    background-color: #F5F4F1;
+    padding: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    position: relative;
+    top: -8px;
+}
+
+#password {
+    background-color: #F5F4F1;
+    padding: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    position: relative;
+    top: -8px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao button {
+    background-color: var(--verde);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer ;
+}
+.texto-chamativo{
+    color: var(--cor-fonte-preco);
+}
+
+@media(max-width:460px) {
+    .loginContainer-text {
+        width: 250px;
+    }   
+}

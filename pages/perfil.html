@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Perfumaria</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-head">
+            <div class="container-header-logo">
+
+                <div class="container-logo">
+                    <a href="../index.html" class="container__link">
+                        <img src="../img/logo-completa.svg" alt="logo Perfumaria" class="logo-completa">
+                </div>
+                <div class="container-head-atalhos"></div>
+                <section class="container__botao__ancora">
+                    <a href="#" class="container__link"><img src="../img/Favoritos.svg" alt="Meus Favoritos"
+                            class="container-imagem container__imagem-transparente">
+                        <p class="container__texto container-favoritos">Meus favoritos</p>
+                    </a>
+                    <a href="./car.html" class="container__link">
+                        <img src="../img/Compras.svg" alt="Carrinho de Compras" class="container-imagem">
+                        <p class="container__texto">Minha sacola</p>
+                    </a>
+                    <a href="#" id="user-perfil" class="container__link">
+                        <img src="../img/fa--user.svg" alt="Perfil" class="container-imagem">
+                        <p class="container__texto">Perfil</p>
+                    </a>
+                </section>
+            </div>
+            <div class="container-head-barra-de-pesquisa">
+                <input type="search" class="input-busca" placeholder="O que você procura hoje?"></input>
+                <button class="botao-busca">
+                    <img src="../img/busca.svg" alt="lupa para busca" class="imagem__lupa">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="loginContainer" class="loginContainer">
+        <div class="loginContainer-text">
+            <h2 class="texto-chamativo">Login ou Cadastro</h2>
+            <form class="form-cadastro">
+                <div>
+                    <input placeholder="Email" type="email" id="email" name="email">
+                </div>
+                <div>
+                    <input placeholder="Senha" type="password" id="password" name="password">
+                </div>
+                <div class="botao">
+                    <div>
+                        <button type="submit" id="loginForm">Entrar</button>
+                        <button type="button" id="registerButton">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="userLoggedContainer" class="hidden loginContainer">
+        <div class="loginContainer-text">
+            <h2 class="texto-chamativo">Bem vindo!</h2>
+            <div class="botao">
+                <button id="logoutButton">Sair</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script/perfil.js"></script>
+</body>
+
+</html>

@@ -4,39 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Perfumaria</title>
 </head>
 
 <body>
-
     <header>
         <div class="container-head">
             <div class="container-header-logo">
-                <button class="menu-hamburguer">
-                    <img src="img/Menu.svg" alt="aba menu-hamburguer" class="container-imagem menu-hamburguer-oculto">
-                </button>
-                <div class="container-logo">
-                    <img src="img/logo-completa.svg" alt="logo Perfumaria" class="logo-completa">
-                </div>
-                <div class="container-head-atalhos">
-                </div>
-                <section class="container__botao__ancora">
-                    <a href="#" class="container__link"><img src="img/Favoritos.svg" alt="Meus Favoritos"
-                        class="container-imagem container__imagem-transparente">
-                    <p class="container__texto container-favoritos">Meus favoritos</p>
-                </a>
-                <a href="#" class="container__link">
-                    <img src="img/Compras.svg" alt="Carrinho de Compras" class="container-imagem">
-                    <p class="container__texto">Minha sacola</p>
 
-                </a>
+                <div class="container-logo">
+                    <a href="index.html" class="container__link">
+                        <img src="./img/logo-completa.svg" alt="logo Perfumaria" class="logo-completa">
+                    </a>
+                </div>
+                <div class="container-head-atalhos"></div>
+                <section class="container__botao__ancora">
+                    <a href="#" class="container__link"><img src="./img/Favoritos.svg" alt="Meus Favoritos"
+                            class="container-imagem container__imagem-transparente">
+                        <p class="container__texto container-favoritos">Meus favoritos</p>
+                    </a>
+                    <a href="./pages/car.html" class="container__link">
+                        <img src="./img/Compras.svg" alt="Carrinho de Compras" class="container-imagem">
+                        <p class="container__texto">Minha sacola</p>
+                    </a>
+                    <a href="pages/perfil.html" id="user-perfil" class="container__link">
+                        <img src="img/fa--user.svg" alt="Perfil" class="container-imagem">
+                        <p class="container__texto">Perfil</p>
+                    </a>
                 </section>
-                
             </div>
             <div class="container-head-barra-de-pesquisa">
                 <input type="search" class="input-busca" placeholder="O que você procura hoje?"></input>
@@ -44,187 +44,47 @@
                     <img src="img/busca.svg" alt="lupa para busca" class="imagem__lupa">
                 </button>
             </div>
-
-        </div>
         </div>
     </header>
+
     <section class="carrossel">
-        <!-- Slider main container -->
         <div class="carrossel__container">
             <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
-
                     <div class="swiper-slide"><img src="img/planfetos/banner-1.jpg" alt="Lançamento casa214"></div>
-
                     <div class="swiper-slide"><img src="img/planfetos/banner-2.webp" alt="Make b"></div>
                     <div class="swiper-slide"><img src="img/planfetos/banner-3.jpg" alt="Nativa spa"></div>
                     <div class="swiper-slide"><img src="img/planfetos/banner.jpg" alt="Desconto boticario"></div>
-
                 </div>
-
-
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
             <section class="lancamentos">
-                <h3 class="lancamentos__descricao__titulo">Conheça a nova fragrância inesquecível de <strong
-                        class="descricao__texto__strong">Nativa Spa!</strong></h3>
+                <h3 class="lancamentos__descricao__titulo">Conheça nossos produtos </h3>
             </section>
-            <section class="lancamentos__cards">
-                <div class="card">
-
-                    <div class="card__descricao">
-
-                        <div class="descricao">
-
-                            <h2 class="descricao__titulo-produto">Lançamento nativa Spa Lilac</h2>
-                            <p class="descricao__texto">creme hidratante e body splash</p>
-                            <p class="descricao__texto descricao__texto__valor__texto">Valor:</p>
-                            <p class="descricao__texto descricao__texto__valor">128,80</p>
-                        </div>
-
-                        <img src="img/produtos/nativa-spa-lilac-creme-hidratante-body-splash.webp"
-                            class="descricao__imagem" alt="novo nativa spa lilac creme hidratante body splash">
-                    </div>
-
-                    <div class="card__botoes">
-
-                        <ul class="botoes">
-                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"
-                                    class="botoes__item__imagem"></li>
-                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"
-                                    class="botoes__item__imagem"></li>
-                        </ul>
-
-                        <a href="#" id="botoes__ancora__comprar" class="botoes__ancora">Comprar</a>
-                    </div>
-
-                </div>
-                <div class="card">
-
-                    <div class="card__descricao">
-
-                        <div class="descricao">
-
-                            <h2 class="descricao__titulo-produto">Lançamento nativa Spa Lilac</h2>
-                            <p class="descricao__texto">body splash</p>
-                            <p class="descricao__texto descricao__texto__valor__texto">Valor:</p>
-                            <p class="descricao__texto descricao__texto__valor">67,90</p>
-                        </div>
-
-                        <img src="img/produtos/nativa_spa_body_splash.webp" class="descricao__imagem"
-                            alt="novo nativa spa lilac body splash">
-                    </div>
-
-                    <div class="card__botoes">
-
-                        <ul class="botoes">
-                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"
-                                    class="botoes__item__imagem"></li>
-                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"
-                                    class="botoes__item__imagem"></li>
-                        </ul>
-
-                        <a href="#" id="botoes__ancora__comprar" class="botoes__ancora">Comprar</a>
-                    </div>
-
-                </div>
-            </section>
-            <section class="lancamentos__cards">
-                <div class="card">
-
-                    <div class="card__descricao">
-
-                        <div class="descricao">
-
-                            <h2 class="descricao__titulo-produto">Lançamento nativa Spa Lilac</h2>
-                            <p class="descricao__texto">creme hidratante corporal</p>
-                            <p class="descricao__texto descricao__texto__valor__texto">Valor:</p>
-                            <p class="descricao__texto descricao__texto__valor">60,90</p>
-                        </div>
-
-                        <img src="img/produtos/nativa-spa-lilac-creme-hidratante-corporal.webp"
-                            class="descricao__imagem" alt="novo nativa spa lilac creme hidratante corporal">
-                    </div>
-
-                    <div class="card__botoes">
-
-                        <ul class="botoes">
-                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"
-                                    class="botoes__item__imagem"></li>
-                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"
-                                    class="botoes__item__imagem"></li>
-                        </ul>
-
-                        <a href="#" class="botoes__ancora" id="botoes__ancora__comprar">Comprar</a>
-                    </div>
-
-                </div>
-                <div class="card">
-
-                    <div class="card__descricao">
-
-                        <div class="descricao">
-
-                            <h2 class="descricao__titulo-produto">Lançamento nativa Spa Lilac</h2>
-                            <p class="descricao__texto">sabonete em barra</p>
-                            <p class="descricao__texto descricao__texto__valor__texto">Valor:</p>
-                            <p class="descricao__texto descricao__texto__valor">19,90</p>
-                        </div>
-
-                        <img src="img/produtos/nativa-spa-lilac-sabonete-barra.webp" class="descricao__imagem"
-                            alt="novo nativa spa lilac sabonete em barra">
-                    </div>
-
-                    <div class="card__botoes">
-
-                        <ul class="botoes">
-                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"
-                                    class="botoes__item__imagem"></li>
-                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"
-                                    class="botoes__item__imagem"></li>
-                        </ul>
-
-                        <a href="#" class="botoes__ancora" id="botoes__ancora__comprar">Comprar</a>
-                    </div>
-
-                </div>
-            </section>
-
+            <section class="lancamentos__cards"></section>
         </div>
     </section>
-    <div class="modal-background">
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2 id="modal-title" class="adicionado__carrinho">Produto adicionado no carrinho</h2>
-            </div>
-        </div>
-      </div>
+
+    <div id="app"></div>
 
     <footer class="rodape">
         <h3>Projeto desenvolvido por Andresa Zuim</h3>
     </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <script src="./script/produtos.js"></script>
 </body>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerView: 1,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
-    });
-</script>
-
-<script src="./script/index.js"></script>
-
 
 </html>

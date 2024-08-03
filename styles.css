@@ -1,7 +1,9 @@
 @import url("styles/header.css");
 @import url("styles/carrossel.css");
-@import url("styles/modal.css");
+@import url("styles/perfil.css");
+@import url("styles/car.css");
 @import url("styles/footer.css");
+
 
 :root{
     --cor-de-fundo: #f5f4f1;
@@ -17,10 +19,16 @@
     --cor-fonte-preco: #5d9266;
 }
 
-
 body{
+    overflow-x: hidden;
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    margin: 0 auto;
 }
+
+.hidden {
+    display: none;
+}
+

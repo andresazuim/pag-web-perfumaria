@@ -1,0 +1,41 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-final-compra{
+    background-color: rgba(189, 20, 20, 0.928);
+    
+}
+
+.button-continua-compra{
+    background-color: var(--cor-fonte-preco);
+}
