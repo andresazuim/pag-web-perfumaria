@@ -11,6 +11,40 @@ document.addEventListener("DOMContentLoaded", function () {
       userLoggedContainer.classList.add("hidden");
     }
   }
+  
+  async function handleRegister(event) {
+    event.preventDefault();
+  
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+  
+    try {
+      const response = await fetch("http://localhost:5000/api/users/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        alert("Cadastro realizado com sucesso!");
+        // Redirecionar ou limpar o formulário conforme necessário
+      } else {
+        console.error("Cadastro falhou", response.status, response.statusText);
+        alert("Não foi possível realizar o cadastro.");
+      }
+    } catch (error) {
+      console.error("Erro:", error);
+      alert("Ocorreu um erro ao realizar o cadastro. Tente novamente.");
+    }
+  }
+  
+  const registerButton = document.getElementById("registerButton");
+  if (registerButton) {
+    registerButton.addEventListener("click", handleRegister);
+  }
 
   function showUserLogged() {
     const loginContainer = document.getElementById("loginContainer");
